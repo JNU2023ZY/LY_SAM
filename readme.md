@@ -1,18 +1,3 @@
-# 🏆VOTS 2023 Winner: DMAOT（Decoupled Memory AOT）
-
-## Intro
-DMAOT ranked **1st** in the [**VOTS 2023**](https://www.votchallenge.net/vots2023/) challenge ([leaderboard](https://eu.aihub.ml/competitions/201#results)). As a plug-and-play method, DMAOT enhances the segmentation ability of AOT series algorithms in long-time videos without requiring any training process.
-<!-- 插入奖状 -->
-<p align="center"><img src="./figures/certificate.jpg" width = "400" height = "500" alt="vots2023_certificate"/> </p>
-
-### Instance-wise long-term memories
-We decouple the **frame-wise long-term memory** used in the AOT series frameworks and transform it into **instance-wise long-term memory**. This enhancement provides more precise control over the long-term memory bank of each individual, facilitating fine-grained memory management.
-<p align="center"><img src="./figures/decouple.jpg" width = "600" height = "300" alt="Instance-wise long-term memory bank"/> </p>
-
-### Dropout frame strategy based on cosine similarity.
-We also utilize the dropout frame strategy based on cosine similarity when the maximum number of frames in the instance-wise long-term memory bank is reached. This strategy ensure each long-term memory bank have higher quality of memories.
-<p align="center"><img src="./figures/drop_stra.jpg" width = "600" height = "300" alt="dropout frame strategy based on cosine similarity"/> </p>
-
 ## Prerequisites
 
 ### Install python packages
