@@ -3,8 +3,8 @@
 ### Install python packages
 - Create a new conda environment
 ```
-conda create -n dmaot python=3.8
-conda activate dmaot
+conda create -n LYSAM python=3.8
+conda activate LYSAM
 ```
 - Then run,
 ```
