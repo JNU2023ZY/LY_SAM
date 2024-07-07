@@ -1,4 +1,9 @@
-- This tracker is based on DMAOT.We obtain the mask and bounding box through DMAOT, and further segmentation through the HQ-SAM model to obtain a new mask, and template updating and score metrics to obtain a more plausible and accurate mask.
+This tracker is based on DMAOT.We obtain the mask and bounding box through DMAOT, and further segmentation through the HQ-SAM model to obtain a new mask, and template updating and score metrics to obtain a more plausible and accurate mask.
+
+We use the HQ-SAM model to further segment the boundary of the target by the mask and bounding box obtained from DMAOT to further improve the segmentation ability of the model. The segmentation ability of the SAM model depends entirely on the localization ability of DMAOT, and if a poor bounding box is used, the result of using the SAM segmentation may lead to a reduction in the overall performance of the model. 
+### <p align="center"><img src="./figures/decouple.jpg" width = "600" height = "300" alt="Instance-wise long-term memory bank"/> </p>
+
+
 ## Prerequisites
 
 ### Install python packages
