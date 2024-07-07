@@ -2,8 +2,6 @@ This tracker is based on DMAOT.We obtain the mask and bounding box through DMAOT
 
 We use the HQ-SAM model to further segment the boundary of the target by the mask and bounding box obtained from DMAOT to further improve the segmentation ability of the model. The segmentation ability of the SAM model depends entirely on the localization ability of DMAOT, and if a poor bounding box is used, the result of using the SAM segmentation may lead to a reduction in the overall performance of the model. 
 <p align="center"><img src="./figure/score.jpg" alt="Similarity comparison and template updating"/> </p>
-![score](https://github.com/JNU2023ZY/LY_SAM/assets/60956578/f7895f6b-622f-43c6-8e60-074c147239d3)
-
 
 ## Prerequisites
 
