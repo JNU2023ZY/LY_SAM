@@ -22,7 +22,7 @@ bash install.sh
 ### Download HQ-SAM_h
 - HQ-SAM_h can be downloaded from [here](https://drive.google.com/file/d/1qobFYrI4eyIANfBSmYcGuWRaSIXfMOQ8/view?usp=sharing) and put it under
 '''
-/path/to/HQTrack/segment_anything_hq/pretrained_model/
+/path/to/LY_SAM/segment_anything_hq/pretrained_model/
 '''
 ## Prepare data
 - To initialize the workspace using VOT-Toolkit
