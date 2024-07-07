@@ -1,3 +1,4 @@
+- This tracker is based on DMAOT.We obtain the mask and bounding box through DMAOT, and further segmentation through the HQ-SAM model to obtain a new mask, and template updating and score metrics to obtain a more plausible and accurate mask.
 ## Prerequisites
 
 ### Install python packages
@@ -14,6 +15,11 @@ bash install.sh
 - Pretrained models of AOT and DeAOT can be downloaded from [here](https://github.com/yoxu515/aot-benchmark/blob/main/MODEL_ZOO.md).
 - We also utilize the SwinB-DeAOT model trained on a larger dataset, and the pretrained weights can be downloaded from [here](https://drive.google.com/file/d/1KTJdR354BtFEGTrA_a4fcKUUHe2woxtn/view?usp=sharing).
 - Put the pretrained weight in `./pretrained_models`.
+### Download HQ-SAM_h
+- HQ-SAM_h can be downloaded from [here](https://drive.google.com/file/d/1qobFYrI4eyIANfBSmYcGuWRaSIXfMOQ8/view?usp=sharing) and put it under
+'''
+/path/to/HQTrack/segment_anything_hq/pretrained_model/
+'''
 ## Prepare data
 - To initialize the workspace using VOT-Toolkit
 ```
@@ -37,9 +43,6 @@ bash evaluate.sh
 vot pack --workspace <workspace-path> <tracker-name>
 ```
 - Upload to [evaluation server](https://eu.aihub.ml/competitions/201). More detail can find in [here](https://www.votchallenge.net/vots2023/participation.html).
-
-## Thanks
-DMAOT are based on the [AOT-Benchmark](https://github.com/yoxu515/aot-benchmark), which supports both AOT and DeAOT now. Thanks for such an excellent implementation.
 
 ## Citations
 Please consider citing the related paper(s) in your publications if it helps your research.
